@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9231F4A2-12FA-44AA-9270-E0715EF0169A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\SIDashboard\packages\Microsoft.ApplicationInsights.2.4.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.16.0.14, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\SIDashboard\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.16.0\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.16.0.14, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\SIDashboard\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.16.0\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\SIDashboard\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\SIDashboard\packages\System.Diagnostics.DiagnosticSource.4.4.0\lib\net45\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SolutionConfig\CustomerCareIntelligenceSolutionConfig.cs" />
+    <Compile Include="SolutionConfig\SolutionConfigName.cs" />
+    <Compile Include="SolutionConfig\SalesIntelligenceSolutionConfig.cs" />
+    <Compile Include="SolutionConfig\SolutionName.cs" />
+    <Compile Include="SolutionConfig\SolutionConfig.cs" />
+    <Compile Include="DBModel\ReleaseModel.cs" />
+    <Compile Include="DBModel\TestRunModel.cs" />
+    <Compile Include="DBModel\VSOWorkItemDBModel.cs" />
+    <Compile Include="DBModel\OfficialBuildModel.cs" />
+    <Compile Include="DBModel\PullRequestModel.cs" />
+    <Compile Include="DBModel\TestCoverageModel.cs" />
+    <Compile Include="MetricCollector\BuildTestRunDBMetricCollector.cs" />
+    <Compile Include="MetricCollector\MetricCollector.cs" />
+    <Compile Include="MetricCollector\MetricCollectorFactory.cs" />
+    <Compile Include="MetricCollector\OfficialBuildDBMetricCollector.cs" />
+    <Compile Include="MetricCollector\PullRequestDBMetricCollector.cs" />
+    <Compile Include="MetricCollector\ReleaseTestRunDBMetricCollector.cs" />
+    <Compile Include="MetricCollector\TestCoverageDBMetricCollector.cs" />
+    <Compile Include="MetricCollector\VSOWorkItemCollector.cs" />
+    <Compile Include="MetricCollector\WorkItemCollector.cs" />
+    <Compile Include="MetricData\Release.cs" />
+    <Compile Include="MetricData\ReleaseTestResult.cs" />
+    <Compile Include="MetricData\TestRunResponse.cs" />
+    <Compile Include="MetricData\VSOWorkItem.cs" />
+    <Compile Include="MetricData\Metric.cs" />
+    <Compile Include="MetricData\MetricType.cs" />
+    <Compile Include="MetricData\OfficialBuild.cs" />
+    <Compile Include="MetricData\PullRequest.cs" />
+    <Compile Include="MetricData\TestCoverage.cs" />
+    <Compile Include="MetricStorageWriter\DBMetricStorageWriter.cs" />
+    <Compile Include="MetricStorageWriter\MetricStorageWriter.cs" />
+    <Compile Include="MetricStorageWriter\OffcialBuildDBMetricStorageWriter.cs" />
+    <Compile Include="MetricStorageWriter\PullRequestDBMetricStorageWriter.cs" />
+    <Compile Include="MetricStorageWriter\TestCoverageDBMetricStorageWriter.cs" />
+    <Compile Include="MetricStorageWriter\TestRunDBMetricStorageWriter.cs" />
+    <Compile Include="MetricStorageWriter\VSOWorkItemDBMetricStorageWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\ReleaseUtil.cs" />
+    <Compile Include="Shared\TestRunUtil.cs" />
+    <Compile Include="Shared\APIPingUtil.cs" />
+    <Compile Include="Shared\AppInsightLogger.cs" />
+    <Compile Include="Shared\AppInsightUtil.cs" />
+    <Compile Include="Shared\DBUtil.cs" />
+    <Compile Include="Shared\OfficialBuildUtil.cs" />
+    <Compile Include="Shared\PullRequestUtil.cs" />
+    <Compile Include="Shared\TestCoverageUtil.cs" />
+    <Compile Include="Shared\VSOApiUtil.cs" />
+    <Compile Include="Shared\WorkItemUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

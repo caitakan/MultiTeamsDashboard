@@ -1,0 +1,3 @@
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\SIDashboard\BizDashboardBackEnd\bin\Debug\BizDashboardBackEnd.config
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\SIDashboard\BizDashboardBackEnd\obj\x64\Debug\BizDashboardBackEnd.sfprojResolveAssemblyReference.cache
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\SIDashboard\BizDashboardBackEnd\obj\x64\Debug\BizDashboardBackEnd.sfproj.CoreCompileInputs.cache

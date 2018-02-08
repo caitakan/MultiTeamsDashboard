@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Business AI : Sales Intelligence : Engineering Metrics Dashboard</title>
+    <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="Scripts/SalesIntelligenceDashboardConfig.js" type="text/javascript"></script>
+    <script src="Scripts/SalesIntelligenceDashboardRender.js" type="text/javascript"></script>
+    <style>
+        table {
+            font-family: "Calibri";
+        }
+
+        td {
+            background-color: #eaeaea;
+            padding: 3px;
+        }
+
+        thead tr td {
+            background-color: #BDD7EE;
+            font-size: 25px;
+        }
+
+        .categoryColumn {
+            background-color: #BDD7EE;
+        }
+
+        .good {
+            background-color: #92D050;
+        }
+
+        .warning {
+            background-color: #FFFF00;
+        }
+
+        .fail {
+            background-color: #B40000;
+            color: #ffffff;
+        }
+
+        #loading {
+            background-color: #ffd800;
+            font-family: "Calibri";
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading metrics; please wait ...</div>
+    <table id="result">
+        <thead>
+            <tr>
+                <td>Category</td>
+                <td>Metric</td>
+                <td colspan="3">Target</td>
+                <td colspan="3">Sales Intelligence Metrics</td>
+            </tr>
+        </thead>
+        <tr>
+            <td></td>
+            <td></td>
+            <td class='good'>Green</td>
+            <td class='warning'>Yellow</td>
+            <td class='fail'>Red</td>
+            <td>Current Month</td>
+            <td>Previous Month</td>
+            <td>N-2 Month</td>
+        </tr>
+    </table>
+</body>
+</html>

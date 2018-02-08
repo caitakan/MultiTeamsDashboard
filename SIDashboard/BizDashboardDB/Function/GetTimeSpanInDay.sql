@@ -1,0 +1,12 @@
+﻿CREATE FUNCTION dbo.GetTimeSpanInDay
+(
+	@start DATETIME,
+	@end DATETIME
+)
+RETURNS FLOAT
+BEGIN
+	IF @end IS NULL 
+		RETURN 0;
+
+	RETURN DATEDIFF(SECOND, @start, @end) / (86400.0) ;
+END

@@ -1,0 +1,16 @@
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\ApplicationInsights.config
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Common.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Common.pdb
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Microsoft.ApplicationInsights.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Newtonsoft.Json.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Microsoft.ApplicationInsights.xml
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\Newtonsoft.Json.xml
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\obj\Debug\Common.dll
+D:\bing\NewPulse\BizDashboardMaster\BizAIDashboard\Common\obj\Debug\Common.pdb

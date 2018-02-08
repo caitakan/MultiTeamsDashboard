@@ -1,0 +1,24 @@
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Dashboard.DashboardDataReader;
+using Dashboard.Shared;
+
+namespace DashboardWebAppTests.Reader
+{
+    [TestClass]
+    public class LatencyReaderTest
+    {
+        private const string DBConnection = SalesIntelligenceWebApiConstant.BizDashboardDBConnectionString;
+
+        [TestMethod]
+        public void TestLatencyReaderRetunsWithoutException()
+        {
+            var reader = new LatencyKustoDashboardDataReader(
+                                SalesIntelligenceWebApiConstant.QUEUE_SCORING_SERVICE_UPTIME,
+                                SalesIntelligenceWebApiConstant.INSIDE_SALES_KUSTO_KEY,
+                                SalesIntelligenceWebApiConstant.INSIDE_SALES_KUSTO_ENDPOINT);
+            var data = reader.read();
+            Assert.IsNotNull(data);
+        }
+    }
+}
